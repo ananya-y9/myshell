@@ -1,0 +1,1 @@
+this should go to another file when > is passed as an argument and my.txt is the file on the left
