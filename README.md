@@ -30,45 +30,87 @@ buffer length is 200.
 Some test cases we tried:
 
 ./mysh gave us interactive mode and exited successfully after writing exit (works if arguments are passed after)
+
 ./mysh
+
 Mysh > exit bye gave us bye and then exited
+
 ./mysh test.txt gave use batch mode and ended after executing
+
 If echo hello was in test.txt, the terminal would print out hello
+
 ./mysh works in interactive mode INSIDE ./mysh
+
 Running mysh
+
 Mysh > ./mysh test.txt
+
 Also executes test.txt in batch mode, and does not exit upon execution because still in original ./mysh
+
 ./mysh dev/tty
+
 Will display welcome to my shell
+
 Executes ./mysh because the second argument is the terminal
+
 Running mysh
+
 Mysh > pwd
+
 Displays current working directory and continues
+
 Mysh > cd ..
+
 Mysh > pwd
+
 Displays current working directory (changed to parent of previous) and continues
+
 ./mysh
+
 Welcome to mysh!
+
 Mysh > echo hello bye > newfile
+
 Cat newfile displays hello in mysh
+
 ./mysh
+
 Welcome to mysh!
+
 Mysh > wc -l < newfile > output
+
 Cat output displays 1 in mysh
+
 ./mysh
+
 Welcome to mysh!
+
 Mysh > ls | grep file
+
 displays all files in current directory with “file”
+
 ./mysh
+
 Welcome to mysh!
+
 Mysh > ls | grep file > list
+
 Displays nothing
+
 Mysh > cat list
+
 displays all files in current directory with “file”
+
 Ls | sort —> sorts all files
+
 Ls *.txt | sort —> sorts all files with .txt
+
 Ls | sort > output —> sorts all files and sends to output
+
 echo hello > bar : sends hello to bar
+
 echo hello > bar > foo : sends helo to foo
+
 ./c1 then ./c1 prints for both programs
+
 ./c1 else ./c2 only prints program 1
